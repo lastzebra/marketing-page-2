@@ -25,7 +25,7 @@ export function Button({ variant = 'primary', children, className = '', as, href
   const baseStyles = 'px-8 py-3.5 rounded-md font-medium text-body transition-all duration-200'
   
   const variants: Record<ButtonVariant, string> = {
-    primary: 'bg-grad-accent text-white hover:scale-[1.02] hover:shadow-glow-accent animate-gradient',
+    primary: 'bg-grad-accent text-white hover:shadow-glow-accent animate-gradient',
     secondary: 'border border-surface-1 text-text-1 hover:border-violet/50 hover:text-text-0 hover:bg-surface-1',
     ghost: 'text-text-1 hover:text-text-0',
   }

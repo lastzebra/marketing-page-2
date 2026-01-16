@@ -17,7 +17,7 @@ export function Hero() {
       {/* Content */}
       <Container className="relative z-10 text-center space-y-10 sm:space-y-12">
         {/* Headline */}
-        <h1 className="font-display text-h1 font-bold leading-tight tracking-tight">
+        <h1 className="font-display text-h1 font-bold leading-tight tracking-tight float-title">
           <span className="block bg-grad-accent bg-clip-text text-transparent">
             {t.hero.headline.line1}
           </span>
@@ -30,13 +30,13 @@ export function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body font-normal">
+        <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body font-normal float-subtitle">
           {t.hero.subheadline}
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 pt-6">
-          <Button as="link" href={LINKS.app} variant="primary">{t.hero.ctaPrimary}</Button>
+          <Button as="link" href={LINKS.app} variant="primary" className="float-button hover-lift">{t.hero.ctaPrimary}</Button>
           <Button as="link" href={LINKS.demo} variant="secondary">{t.hero.ctaSecondary}</Button>
         </div>
       </Container>

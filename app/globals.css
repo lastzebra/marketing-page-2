@@ -129,6 +129,84 @@
     }
   }
 
+  /* Floating Animations - Premium, Calm, Musical */
+  @keyframes floatY {
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -4px, 0);
+    }
+  }
+
+  @keyframes floatYSlow {
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -2px, 0);
+    }
+  }
+
+  @keyframes floatYSubtle {
+    0%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -1px, 0);
+    }
+  }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  /* Float Utilities */
+  .float-title {
+    animation: floatY 12s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  .float-subtitle {
+    animation: floatYSlow 10s ease-in-out infinite;
+    animation-delay: -2s; /* Offset for natural variation */
+    will-change: transform;
+  }
+
+  .float-button {
+    animation: floatYSubtle 14s ease-in-out infinite;
+    animation-delay: -4s; /* Different timing from title */
+    will-change: transform;
+  }
+
+  /* Hover lift for buttons */
+  .hover-lift {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translate3d(0, -2px, 0);
+  }
+
+  /* Respect reduced motion - disable all floating */
+  @media (prefers-reduced-motion: reduce) {
+    .float-title,
+    .float-subtitle,
+    .float-button {
+      animation: none;
+      transform: none;
+    }
+
+    .hover-lift:hover {
+      transform: none;
+    }
+  }
+
   .cursor-glow {
     position: relative;
   }
@@ -137,3 +215,22 @@
     position: relative;
   }
 }
+
+/* 
+ * FLOATING ANIMATION TWEAKS:
+ * 
+ * To adjust amplitude (movement distance):
+ * - Change translate3d Y value in keyframes (currently -4px, -2px, -1px)
+ * - float-title: -4px = stronger, -2px = lighter
+ * - float-subtitle/float-button: -2px/-1px = very subtle
+ * 
+ * To adjust speed:
+ * - Change animation duration (12s, 10s, 14s)
+ * - Lower = faster, Higher = slower
+ * - Recommended range: 8s-16s for premium feel
+ * 
+ * To adjust timing offset:
+ * - Change animation-delay negative values
+ * - Different delays prevent synchronization
+ * - Range: -6s to 0s works well
+ */
