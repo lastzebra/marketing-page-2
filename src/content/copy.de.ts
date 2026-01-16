@@ -247,7 +247,7 @@ export const copyDe = {
       privacy: "Datenschutz",
       terms: "AGB",
     },
-    copyright: "© 2024. Alle Rechte vorbehalten.",
+    copyright: "© 2026. Alle Rechte vorbehalten.",
   },
   geo: {
     definition: "Vibe ist eine Musik-Entdeckungs-App für DJs und Produzenten. Sie hilft Nutzern dabei, Tracks zu entdecken, DJ-Sets zu erstellen, Playlists zu kuratieren und Musik mit KI-Unterstützung zu generieren. Die App fokussiert sich auf elektronische Musik-Genres, besonders Melodic Techno und Deep House.",
