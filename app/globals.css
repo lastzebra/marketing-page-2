@@ -34,25 +34,34 @@
   --text-1: rgba(255,255,255,0.72); /* secondary */
   --text-2: rgba(255,255,255,0.52); /* muted */
 
-  /* Accents */
-  --dark-green: #166534;   /* dark green - ehemals violet */
-  --teal: #14B8A6;     /* teal glow */
-  --cyan: #22D3EE;     /* soft cyan */
-  --amber: #F59E0B;    /* warm spark */
+  /* Accents - Primary Gradient System */
+  --accent-blue: #38BDF8;      /* sky - light blue/cyan */
+  --accent-purple: #7C3AED;    /* violet/purple */
+  --teal: #14B8A6;             /* teal glow - secondary accent */
+  --amber: #F59E0B;            /* warm spark - secondary accent */
 
-  /* Gradients */
+  /* Primary Gradients - Light Blue → Purple */
+  --grad-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  --grad-accent-soft: linear-gradient(135deg, rgba(56,189,248,0.15) 0%, rgba(124,58,237,0.15) 100%);
+  
+  /* Hero Background Gradient */
   --grad-hero: radial-gradient(1200px circle at 20% 10%,
-      rgba(22,101,52,0.25), transparent 55%),
+      rgba(56,189,248,0.20), transparent 55%),
     radial-gradient(900px circle at 80% 30%,
-      rgba(20,184,166,0.18), transparent 60%),
+      rgba(124,58,237,0.18), transparent 60%),
     linear-gradient(180deg, var(--bg-0), var(--bg-1));
 
-  --grad-glow: linear-gradient(90deg, var(--dark-green), var(--cyan), var(--teal));
+  /* Main Glow Gradient */
+  --grad-glow: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
 
   /* Shadows / Glows */
   --shadow-soft: 0 10px 40px rgba(0,0,0,0.55);
-  --glow-dark-green: 0 0 32px rgba(22,101,52,0.35);
+  --glow-accent: 0 0 32px rgba(56,189,248,0.25), 0 0 48px rgba(124,58,237,0.20);
   --glow-teal: 0 0 28px rgba(20,184,166,0.28);
+  
+  /* Legacy support (keep for compatibility) */
+  --dark-green: var(--accent-purple);
+  --glow-dark-green: var(--glow-accent);
 
   /* Radius */
   --r-xl: 24px;
@@ -97,7 +106,7 @@
 }
 
 @layer utilities {
-  @keyframes gradient {
+  @keyframes gradient-shift {
     0%, 100% {
       background-position: 0% 50%;
     }
@@ -108,7 +117,14 @@
   
   .animate-gradient {
     background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-gradient {
+      animation: none;
+    }
   }
 
   .cursor-glow {

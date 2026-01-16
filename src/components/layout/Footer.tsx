@@ -19,7 +19,7 @@ export function Footer() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-display text-h3 font-bold mb-4 bg-grad-glow bg-clip-text text-transparent">
+            <h3 className="font-display text-h3 font-bold mb-4 bg-grad-accent bg-clip-text text-transparent">
               Vibe
             </h3>
             <p className="text-small text-text-1">
@@ -106,7 +106,7 @@ export function Footer() {
               href={LINKS.app}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-small text-dark-green hover:text-dark-green/80 transition-colors"
+              className="text-small text-accent-purple hover:text-accent-purple/80 transition-colors"
             >
               {t.nav.openApp} →
             </a>

@@ -10,7 +10,7 @@ export function HowItWorks() {
   const steps = [
     {
       number: 1,
-      color: 'dark-green',
+      color: 'accent-purple',
       ...t.howItWorks.steps.step1,
     },
     {
@@ -26,15 +26,20 @@ export function HowItWorks() {
   ]
 
   const colors: Record<string, { bg: string; border: string; text: string }> = {
-    'dark-green': {
-      bg: 'bg-dark-green/10',
-      border: 'border-dark-green/20',
-      text: 'text-dark-green',
+    'accent-purple': {
+      bg: 'bg-accent-purple/10',
+      border: 'border-accent-purple/20',
+      text: 'text-accent-purple',
+    },
+    'accent-blue': {
+      bg: 'bg-accent-blue/10',
+      border: 'border-accent-blue/20',
+      text: 'text-accent-blue',
     },
     cyan: {
-      bg: 'bg-cyan-500/10',
-      border: 'border-cyan-500/20',
-      text: 'text-cyan-400',
+      bg: 'bg-accent-blue/10',
+      border: 'border-accent-blue/20',
+      text: 'text-accent-blue',
     },
     amber: {
       bg: 'bg-amber-500/10',
@@ -48,7 +53,7 @@ export function HowItWorks() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-grad-glow bg-clip-text text-transparent">
+            <span className="bg-grad-accent bg-clip-text text-transparent">
               {t.howItWorks.title}
             </span>
           </h2>

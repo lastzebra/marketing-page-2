@@ -8,17 +8,18 @@ export function Benefits() {
   const { t } = useLanguage()
 
   const benefits = [
-    { icon: 'dark-green', ...t.benefits.items.discover },
-    { icon: 'cyan', ...t.benefits.items.buildSets },
+    { icon: 'accent-purple', ...t.benefits.items.discover },
+    { icon: 'accent-blue', ...t.benefits.items.buildSets },
     { icon: 'amber', ...t.benefits.items.generate },
-    { icon: 'dark-green', ...t.benefits.items.workflows },
+    { icon: 'accent-purple', ...t.benefits.items.workflows },
     { icon: 'cyan', ...t.benefits.items.filters },
     { icon: 'amber', ...t.benefits.items.export },
   ]
 
   const iconColors: Record<string, string> = {
-    'dark-green': 'text-dark-green',
-    'cyan': 'text-cyan',
+    'accent-purple': 'text-accent-purple',
+    'accent-blue': 'text-accent-blue',
+    'cyan': 'text-accent-blue',
     'amber': 'text-amber',
   }
 
@@ -27,7 +28,7 @@ export function Benefits() {
       <Container>
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-grad-glow bg-clip-text text-transparent">
+            <span className="bg-grad-accent bg-clip-text text-transparent">
               {t.benefits.title}
             </span>
           </h2>

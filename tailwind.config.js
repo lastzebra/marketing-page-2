@@ -37,14 +37,17 @@ module.exports = {
         'text-0': 'var(--text-0)',
         'text-1': 'var(--text-1)',
         'text-2': 'var(--text-2)',
-        'dark-green': 'var(--dark-green)',
+        /* Primary Accent Colors - Light Blue → Purple */
+        'accent-blue': 'var(--accent-blue)',
+        'accent-purple': 'var(--accent-purple)',
         'teal': 'var(--teal)',
-        'cyan': 'var(--cyan)',
         'amber': 'var(--amber)',
-        // Legacy support
-        'violet': 'var(--dark-green)',
-        'neon-violet': 'var(--dark-green)',
-        'neon-cyan': 'var(--cyan)',
+        /* Legacy support (mapped to new colors) */
+        'dark-green': 'var(--accent-purple)',
+        'cyan': 'var(--accent-blue)',
+        'violet': 'var(--accent-purple)',
+        'neon-violet': 'var(--accent-purple)',
+        'neon-cyan': 'var(--accent-blue)',
         'warm-amber': 'var(--amber)',
       },
       borderRadius: {
@@ -54,9 +57,11 @@ module.exports = {
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
-        'glow-dark-green': 'var(--glow-dark-green)',
-        'glow-violet': 'var(--glow-dark-green)', // Legacy support
+        'glow-accent': 'var(--glow-accent)',
         'glow-teal': 'var(--glow-teal)',
+        /* Legacy support */
+        'glow-dark-green': 'var(--glow-accent)',
+        'glow-violet': 'var(--glow-accent)',
       },
       maxWidth: {
         'container': 'var(--container)',
@@ -64,6 +69,8 @@ module.exports = {
       backgroundImage: {
         'grad-hero': 'var(--grad-hero)',
         'grad-glow': 'var(--grad-glow)',
+        'grad-accent': 'var(--grad-accent)',
+        'grad-accent-soft': 'var(--grad-accent-soft)',
       },
     },
   },

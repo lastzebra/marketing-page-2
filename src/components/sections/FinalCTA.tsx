@@ -12,13 +12,13 @@ export function FinalCTA() {
   return (
     <Section className="relative">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-dark-green/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent-blue/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-accent-purple/5 rounded-full blur-3xl"></div>
       </div>
 
       <Container className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="font-display text-h1 font-bold mb-6 tracking-tight">
-          <span className="bg-gradient-to-r from-dark-green via-cyan-400 to-amber-400 bg-clip-text text-transparent">
+          <span className="bg-grad-accent bg-clip-text text-transparent">
             {t.cta.title}
           </span>
         </h2>

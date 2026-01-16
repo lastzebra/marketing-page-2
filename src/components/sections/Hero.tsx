@@ -12,19 +12,19 @@ export function Hero() {
   return (
     <Section id="hero" className="min-h-screen flex items-center justify-center pt-16">
       {/* Hero Background Gradient */}
-      <div className="absolute inset-0 overflow-hidden bg-grad-hero"></div>
+      <div className="absolute inset-0 overflow-hidden bg-grad-hero animate-gradient"></div>
 
       {/* Content */}
       <Container className="relative z-10 text-center space-y-10 sm:space-y-12">
         {/* Headline */}
         <h1 className="font-display text-h1 font-bold leading-tight tracking-tight">
-          <span className="block bg-grad-glow bg-clip-text text-transparent">
+          <span className="block bg-grad-accent bg-clip-text text-transparent">
             {t.hero.headline.line1}
           </span>
-          <span className="block mt-3 sm:mt-4 bg-grad-glow bg-clip-text text-transparent">
+          <span className="block mt-3 sm:mt-4 bg-grad-accent bg-clip-text text-transparent">
             {t.hero.headline.line2}
           </span>
-          <span className="block mt-3 sm:mt-4 bg-grad-glow bg-clip-text text-transparent">
+          <span className="block mt-3 sm:mt-4 bg-grad-accent bg-clip-text text-transparent">
             {t.hero.headline.line3}
           </span>
         </h1>

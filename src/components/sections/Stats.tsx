@@ -12,7 +12,7 @@ export function Stats() {
       value: t.stats.genres.value,
       title: t.stats.genres.title,
       description: t.stats.genres.description,
-      gradient: 'from-dark-green to-cyan',
+      gradient: 'from-accent-blue to-cyan',
     },
     {
       value: t.stats.tracks.value,
@@ -24,7 +24,7 @@ export function Stats() {
       value: t.stats.sets.value,
       title: t.stats.sets.title,
       description: t.stats.sets.description,
-      gradient: 'from-amber to-dark-green',
+      gradient: 'from-amber to-accent-purple',
     },
   ]
 
@@ -33,7 +33,7 @@ export function Stats() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-grad-glow bg-clip-text text-transparent">
+            <span className="bg-grad-accent bg-clip-text text-transparent">
               {t.stats.title}
             </span>
           </h2>

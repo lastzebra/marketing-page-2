@@ -53,7 +53,7 @@ export function Header() {
               e.preventDefault()
               scrollToSection('hero')
             }}
-            className="font-display text-h3 font-bold bg-grad-glow bg-clip-text text-transparent cursor-pointer"
+            className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer"
           >
             Vibe
           </a>
