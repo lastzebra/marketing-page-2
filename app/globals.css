@@ -110,4 +110,12 @@
     background-size: 200% 200%;
     animation: gradient 3s ease infinite;
   }
+
+  .cursor-glow {
+    position: relative;
+  }
+
+  .cursor-glow-active {
+    position: relative;
+  }
 }

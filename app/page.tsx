@@ -1,7 +1,8 @@
 'use client'
 
 import { LanguageProvider } from '@/contexts/LanguageContext'
-import { Navigation } from '@/components/Navigation'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
 import { ForWhom } from '@/components/sections/ForWhom'
@@ -13,13 +14,12 @@ import { Stats } from '@/components/sections/Stats'
 import { Testimonials } from '@/components/sections/Testimonials'
 import { FAQ } from '@/components/sections/FAQ'
 import { FinalCTA } from '@/components/sections/FinalCTA'
-import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
     <LanguageProvider>
       <main className="min-h-screen bg-bg-0 text-text-0 overflow-hidden relative">
-        <Navigation />
+        <Header />
         <Hero />
         <About />
         <ForWhom />

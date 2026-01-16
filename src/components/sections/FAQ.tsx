@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { Section } from '../ui/Section'
-import { Container } from '../ui/Container'
+import { Section } from '../layout/Section'
+import { Container } from '../layout/Container'
 
 export function FAQ() {
   const { t } = useLanguage()

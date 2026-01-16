@@ -1,7 +1,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { Container } from './ui/Container'
+import { Container } from './Container'
 
 export function Footer() {
   const { t } = useLanguage()
@@ -68,12 +68,12 @@ export function Footer() {
             <h4 className="text-small font-semibold mb-4 text-text-0">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.privacy}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                <a href="#" className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.terms}
                 </a>
               </li>
@@ -81,13 +81,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold mb-4 text-white">Connect</h4>
-            <p className="text-sm text-gray-400 mb-4">
+            <h4 className="text-small font-semibold mb-4 text-text-0">Connect</h4>
+            <p className="text-small text-text-1 mb-4">
               Join the community and start creating.
             </p>
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-sm text-violet-400 hover:text-violet-300 transition-colors"
+              className="text-small text-violet hover:text-violet/80 transition-colors"
             >
               {t.nav.openApp} →
             </button>

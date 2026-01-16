@@ -2,8 +2,8 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { Button } from '../ui/Button'
-import { Section } from '../ui/Section'
-import { Container } from '../ui/Container'
+import { Section } from '../layout/Section'
+import { Container } from '../layout/Container'
 
 export function Hero() {
   const { t } = useLanguage()
