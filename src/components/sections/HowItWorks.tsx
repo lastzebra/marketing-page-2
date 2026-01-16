@@ -25,10 +25,10 @@ export function HowItWorks() {
     },
   ]
 
-  const colors = {
-    dark-green: {
-      bg: 'bg-dark-green-500/10',
-      border: 'border-dark-green-500/20',
+  const colors: Record<string, { bg: string; border: string; text: string }> = {
+    'dark-green': {
+      bg: 'bg-dark-green/10',
+      border: 'border-dark-green/20',
       text: 'text-dark-green',
     },
     cyan: {
@@ -48,7 +48,7 @@ export function HowItWorks() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-dark-green to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-grad-glow bg-clip-text text-transparent">
               {t.howItWorks.title}
             </span>
           </h2>

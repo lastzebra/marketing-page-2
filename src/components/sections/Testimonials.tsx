@@ -29,11 +29,11 @@ export function Testimonials() {
     },
   ]
 
-  const colors = {
-    dark-green: {
-      icon: 'text-dark-green-400',
-      bg: 'bg-dark-green-500/20',
-      initial: 'V',
+  const colors: Record<string, { icon: string; bg: string; initial: string }> = {
+    'dark-green': {
+      icon: 'text-dark-green',
+      bg: 'bg-dark-green/20',
+      initial: 'D',
     },
     cyan: {
       icon: 'text-cyan-400',
@@ -52,7 +52,7 @@ export function Testimonials() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-dark-green-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-grad-glow bg-clip-text text-transparent">
               {t.testimonials.title}
             </span>
           </h2>
