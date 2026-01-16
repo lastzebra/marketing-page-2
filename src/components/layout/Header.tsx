@@ -44,6 +44,7 @@ export function Header() {
           ? 'bg-bg-0/80 backdrop-blur-sm border-b border-surface-1'
           : 'bg-transparent'
       }`}
+      role="banner"
     >
       <Container>
         <div className="flex items-center justify-between h-16">
@@ -54,12 +55,13 @@ export function Header() {
               scrollToSection('hero')
             }}
             className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer"
+            aria-label="Vibe - Home"
           >
             Vibe
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -73,7 +75,7 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-          </div>
+          </nav>
 
           <div className="flex items-center gap-4">
             <LanguageToggle />

@@ -15,7 +15,8 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-surface-1 bg-bg-0 py-12">
+    <footer
+      role="contentinfo" className="border-t border-surface-1 bg-bg-0 py-12">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>

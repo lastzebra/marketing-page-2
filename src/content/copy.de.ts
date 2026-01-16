@@ -249,4 +249,35 @@ export const copyDe = {
     },
     copyright: "© 2024. Alle Rechte vorbehalten.",
   },
+  geo: {
+    definition: "Vibe ist eine Musik-Entdeckungs-App für DJs und Produzenten. Sie hilft Nutzern dabei, Tracks zu entdecken, DJ-Sets zu erstellen, Playlists zu kuratieren und Musik mit KI-Unterstützung zu generieren. Die App fokussiert sich auf elektronische Musik-Genres, besonders Melodic Techno und Deep House.",
+    keyFactsTitle: "Kern-Fakten",
+    facts: {
+      fact1: "Kostenlose Kern-Features für Musik-Entdeckung und Playlist-Erstellung",
+      fact2: "KI-gestützte Track-Generierung für kreative Inspiration",
+      fact3: "DJ-Set-Builder mit Mood-, Energy- und Genre-Organisation",
+      fact4: "Export von Sets in verschiedenen Formaten für DJ-Software-Kompatibilität",
+      fact5: "Community-Features zum Teilen von Sets und Kollaborieren",
+      fact6: "Fokus auf Melodic Techno, Deep House und elektronische Musik",
+    },
+    useCasesTitle: "Anwendungsfälle",
+    useCases: {
+      case1: {
+        title: "DJ-Set-Vorbereitung",
+        description: "Sets für Club-Auftritte vorbereiten, indem du Tracks entdeckst, nach Energy-Level organisierst und smooth Transitions erstellst.",
+      },
+      case2: {
+        title: "Musik-Entdeckung",
+        description: "Neue Tracks und Genres erkunden, die zu deinem kreativen Stil passen. Finde versteckte Perlen in Melodic Techno und Deep House.",
+      },
+      case3: {
+        title: "Track-Generierung",
+        description: "Überwinde kreative Blockaden mit KI-generierten musikalischen Ideen. Generiere Skizzen und Tracks, die zu deinem Vibe passen.",
+      },
+      case4: {
+        title: "Playlist-Kuration",
+        description: "Playlists für Streaming, Sets oder persönliches Hören erstellen und organisieren. Teile sie mit der Community oder behalte sie privat.",
+      },
+    },
+  },
 };

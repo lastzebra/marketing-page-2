@@ -4,6 +4,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/components/sections/Hero'
+import { GeoDefinition } from '@/components/sections/GeoDefinition'
 import { About } from '@/components/sections/About'
 import { ForWhom } from '@/components/sections/ForWhom'
 import { Benefits } from '@/components/sections/Benefits'
@@ -21,6 +22,7 @@ export default function Home() {
       <main className="min-h-screen bg-bg-0 text-text-0 overflow-hidden relative">
         <Header />
         <Hero />
+        <GeoDefinition />
         <About />
         <ForWhom />
         <Benefits />
