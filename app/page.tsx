@@ -9,8 +9,8 @@ export default function Home() {
           Willkommen auf meiner Webseite!
         </p>
         <div className="mt-8 flex justify-center gap-4">
-          <div className="w-16 h-16 bg-orange-400 rounded-full animate-bounce"></div>
-          <div className="w-16 h-16 bg-orange-300 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+          <div className="w-16 h-16 bg-red-400 rounded-full animate-bounce"></div>
+          <div className="w-16 h-16 bg-orange-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
           <div className="w-16 h-16 bg-yellow-300 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
         </div>
       </div>
