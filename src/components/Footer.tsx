@@ -14,14 +14,14 @@ export function Footer() {
   }
 
   return (
-    <footer className="border-t border-gray-800 bg-black py-12">
+    <footer className="border-t border-surface-1 bg-bg-0 py-12">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-bold mb-4 bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <h3 className="text-lg font-bold mb-4 bg-grad-glow bg-clip-text text-transparent">
               Vibe
             </h3>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-text-1">
               {t.hero.subheadline}
             </p>
           </div>
@@ -32,7 +32,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                  className="text-sm text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.about}
                 </button>
@@ -40,7 +40,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('features')}
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                  className="text-sm text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.features}
                 </button>
@@ -48,7 +48,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('community')}
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                  className="text-sm text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.community}
                 </button>
@@ -56,7 +56,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('faq')}
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                  className="text-sm text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.faq}
                 </button>
@@ -94,8 +94,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-800 text-center">
-          <p className="text-sm text-gray-500">{t.footer.copyright}</p>
+        <div className="pt-8 border-t border-surface-1 text-center">
+          <p className="text-sm text-text-2">{t.footer.copyright}</p>
         </div>
       </Container>
     </footer>

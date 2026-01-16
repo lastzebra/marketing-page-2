@@ -2,6 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Base */
+  --bg-0: #05060A;      /* near-black */
+  --bg-1: #0B1020;      /* deep navy */
+  --surface-0: #0C0F18; /* card base */
+  --surface-1: rgba(255,255,255,0.04); /* glass overlay */
+  --border: rgba(255,255,255,0.08);
+
+  /* Text */
+  --text-0: rgba(255,255,255,0.92); /* primary */
+  --text-1: rgba(255,255,255,0.72); /* secondary */
+  --text-2: rgba(255,255,255,0.52); /* muted */
+
+  /* Accents */
+  --violet: #7C3AED;   /* neon violet */
+  --teal: #14B8A6;     /* teal glow */
+  --cyan: #22D3EE;     /* soft cyan */
+  --amber: #F59E0B;    /* warm spark */
+
+  /* Gradients */
+  --grad-hero: radial-gradient(1200px circle at 20% 10%,
+      rgba(124,58,237,0.25), transparent 55%),
+    radial-gradient(900px circle at 80% 30%,
+      rgba(20,184,166,0.18), transparent 60%),
+    linear-gradient(180deg, var(--bg-0), var(--bg-1));
+
+  --grad-glow: linear-gradient(90deg, var(--violet), var(--cyan), var(--teal));
+
+  /* Shadows / Glows */
+  --shadow-soft: 0 10px 40px rgba(0,0,0,0.55);
+  --glow-violet: 0 0 32px rgba(124,58,237,0.35);
+  --glow-teal: 0 0 28px rgba(20,184,166,0.28);
+
+  /* Radius */
+  --r-xl: 24px;
+  --r-lg: 18px;
+  --r-md: 14px;
+
+  /* Spacing */
+  --container: 1120px;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-0);
+    color: var(--text-0);
+  }
+}
+
 @layer utilities {
   @keyframes gradient {
     0%, 100% {

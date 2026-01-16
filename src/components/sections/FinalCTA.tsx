@@ -11,8 +11,8 @@ export function FinalCTA() {
   return (
     <Section className="relative">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-violet-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-violet/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-3xl"></div>
       </div>
 
       <Container className="relative z-10 max-w-4xl mx-auto text-center">
@@ -21,7 +21,7 @@ export function FinalCTA() {
             {t.cta.title}
           </span>
         </h2>
-        <p className="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-text-1 mb-10 max-w-2xl mx-auto leading-relaxed">
           {t.cta.subtitle}
         </p>
 

@@ -39,7 +39,7 @@ export function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-black/80 backdrop-blur-sm border-b border-gray-800'
+          ? 'bg-bg-0/80 backdrop-blur-sm border-b border-surface-1'
           : 'bg-transparent'
       }`}
     >
@@ -47,7 +47,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-bold bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-xl font-bold bg-grad-glow bg-clip-text text-transparent"
           >
             Vibe
           </button>
@@ -58,7 +58,7 @@ export function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm text-gray-300 hover:text-white transition-colors"
+                className="text-sm text-text-1 hover:text-text-0 transition-colors"
               >
                 {item.label}
               </button>

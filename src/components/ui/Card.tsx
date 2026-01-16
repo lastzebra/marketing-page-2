@@ -8,11 +8,11 @@ interface CardProps {
 
 export function Card({ children, className = '', hover = true }: CardProps) {
   const hoverStyles = hover 
-    ? 'transition-all duration-200 hover:border-gray-700 hover:bg-gray-900/70' 
+    ? 'transition-all duration-200 hover:border-violet/30 hover:bg-surface-0' 
     : ''
   
   return (
-    <div className={`p-8 bg-gray-900/50 border border-gray-800 rounded-xl ${hoverStyles} ${className}`}>
+    <div className={`p-8 bg-surface-0 border border-surface-1 rounded-xl ${hoverStyles} ${className}`}>
       {children}
     </div>
   )

@@ -18,7 +18,7 @@ import { Footer } from '@/components/Footer'
 export default function Home() {
   return (
     <LanguageProvider>
-      <main className="min-h-screen bg-black text-white overflow-hidden relative">
+      <main className="min-h-screen bg-bg-0 text-text-0 overflow-hidden relative">
         <Navigation />
         <Hero />
         <About />
