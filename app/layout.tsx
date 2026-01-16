@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Hallo Züri! ',
-  description: 'Eine einfache Hallo Welt Webseite',
+  title: 'Find Your Vibe. Build Sets. Create Sound.',
+  description: 'A playful music app for DJs and sound explorers — discover tracks, build sets and generate your own music.',
 }
 
 export default function RootLayout({
