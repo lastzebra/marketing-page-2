@@ -168,19 +168,19 @@
 
   /* Float Utilities */
   .float-title {
-    animation: floatY 12s ease-in-out infinite;
+    animation: floatY 8s ease-in-out infinite;
     will-change: transform;
   }
 
   .float-subtitle {
-    animation: floatYSlow 10s ease-in-out infinite;
-    animation-delay: -2s; /* Offset for natural variation */
+    animation: floatYSlow 7s ease-in-out infinite;
+    animation-delay: -1.5s; /* Offset for natural variation */
     will-change: transform;
   }
 
   .float-button {
-    animation: floatYSubtle 14s ease-in-out infinite;
-    animation-delay: -4s; /* Different timing from title */
+    animation: floatYSubtle 9s ease-in-out infinite;
+    animation-delay: -3s; /* Different timing from title */
     will-change: transform;
   }
 
@@ -225,9 +225,9 @@
  * - float-subtitle/float-button: -2px/-1px = very subtle
  * 
  * To adjust speed:
- * - Change animation duration (12s, 10s, 14s)
+ * - Change animation duration (currently 8s, 7s, 9s)
  * - Lower = faster, Higher = slower
- * - Recommended range: 8s-16s for premium feel
+ * - Recommended range: 5s-10s for faster feel, 8s-16s for slower premium feel
  * 
  * To adjust timing offset:
  * - Change animation-delay negative values
