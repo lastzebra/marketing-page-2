@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://vibe.app'
@@ -86,7 +86,6 @@ export const metadata: Metadata = {
   },
   category: 'music',
   classification: 'Music Discovery Application',
-  viewport: 'width=device-width, initial-scale=1',
   themeColor: '#000000',
   icons: {
     icon: '/favicon.svg',
@@ -96,6 +95,11 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
