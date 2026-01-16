@@ -2,8 +2,8 @@
 export const LINKS = {
   app: 'https://thelastzebra.lovable.app/',
   demo: '#demo', // Will be implemented as demo section or video
-  privacy: '/privacy', // Can be updated to external privacy policy
-  terms: '/terms', // Can be updated to external terms of service
+  privacy: '/privacy',
+  terms: '/terms',
   community: '#community',
   earlyAccess: 'mailto:earlyaccess@vibe.app?subject=Early%20Access%20Request',
 } as const
