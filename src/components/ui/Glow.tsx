@@ -8,7 +8,7 @@ interface GlowProps {
 }
 
 export function Glow({ children, variant = 'dark-green', intensity = 'medium', className = '' }: GlowProps) {
-  const shadows = {
+  const shadows: Record<string, Record<string, string>> = {
     'dark-green': {
       soft: 'shadow-[0_0_20px_rgba(22,101,52,0.2)]',
       medium: 'shadow-glow-dark-green',

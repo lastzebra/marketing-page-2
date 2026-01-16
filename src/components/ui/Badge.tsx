@@ -7,11 +7,11 @@ interface BadgeProps {
 }
 
 export function Badge({ children, variant = 'dark-green', className = '' }: BadgeProps) {
-  const variants = {
-    dark-green: 'bg-dark-green/10 text-dark-green border-dark-green/20',
-    cyan: 'bg-cyan/10 text-cyan border-cyan/20',
-    teal: 'bg-teal/10 text-teal border-teal/20',
-    amber: 'bg-amber/10 text-amber border-amber/20',
+  const variants: Record<string, string> = {
+    'dark-green': 'bg-dark-green/10 text-dark-green border-dark-green/20',
+    'cyan': 'bg-cyan/10 text-cyan border-cyan/20',
+    'teal': 'bg-teal/10 text-teal border-teal/20',
+    'amber': 'bg-amber/10 text-amber border-amber/20',
   }
 
   return (
