@@ -3,18 +3,19 @@ import Link from 'next/link'
 
 interface BaseButtonProps {
   variant?: 'primary' | 'secondary' | 'ghost'
-  children: ReactNode
   className?: string
 }
 
-interface ButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'> {
+interface ButtonProps extends BaseButtonProps, Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className' | 'children'> {
   as?: 'button'
   href?: never
+  children: ReactNode
 }
 
-interface LinkButtonProps extends BaseButtonProps, Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'href'> {
+interface LinkButtonProps extends BaseButtonProps, Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'className' | 'href' | 'children'> {
   as: 'link'
   href: string
+  children: ReactNode
 }
 
 type ButtonComponentProps = ButtonProps | LinkButtonProps
