@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="text-6xl font-bold text-orange-400 drop-shadow-lg">
           Hallo Züri! 
         </h1>
-        <p className="text-xl text-orange-300 font-medium">
+        <p className="text-3xl text-orange-300 font-semibold leading-10">
           Willkommen auf meiner Webseite!
         </p>
         <div className="mt-8 flex justify-center gap-4">
