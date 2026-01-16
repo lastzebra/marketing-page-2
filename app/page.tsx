@@ -3,7 +3,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 flex items-center justify-center p-8">
       <div className="text-center space-y-6">
         <h1 className="text-6xl font-bold text-orange-400 drop-shadow-lg">
-          Hallo Welt
+          Hallo Züri! 
         </h1>
         <p className="text-xl text-orange-300 font-medium">
           Willkommen auf meiner Webseite!
