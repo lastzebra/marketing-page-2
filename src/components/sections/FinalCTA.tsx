@@ -1,0 +1,36 @@
+'use client'
+
+import { useLanguage } from '@/contexts/LanguageContext'
+import { Section } from '../ui/Section'
+import { Container } from '../ui/Container'
+import { Button } from '../ui/Button'
+
+export function FinalCTA() {
+  const { t } = useLanguage()
+
+  return (
+    <Section className="relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-violet-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <Container className="relative z-10 max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
+          <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-amber-400 bg-clip-text text-transparent">
+            {t.cta.title}
+          </span>
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          {t.cta.subtitle}
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+          <Button variant="primary">{t.cta.buttons.openApp}</Button>
+          <Button variant="secondary">{t.cta.buttons.joinCommunity}</Button>
+          <Button variant="secondary">{t.cta.buttons.earlyAccess}</Button>
+        </div>
+      </Container>
+    </Section>
+  )
+}
