@@ -24,7 +24,9 @@ export function FAQ() {
       <FAQSchema />
       <Section id="faq">
         <Container className="max-w-4xl">
-          <div itemScope itemType="https://schema.org/FAQPage">
+          <div
+            {...({ itemScope: true, itemType: 'https://schema.org/FAQPage' } as any)}
+          >
             <div className="text-center mb-16 sm:mb-20">
               <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
                 <span className="bg-grad-accent bg-clip-text text-transparent">
@@ -37,8 +39,7 @@ export function FAQ() {
               {faqs.map((faq, index) => (
                 <article
                   key={index}
-                  itemScope
-                  itemType="https://schema.org/Question"
+                  {...({ itemScope: true, itemType: 'https://schema.org/Question' } as any)}
                   className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden"
                 >
                   <button
@@ -47,7 +48,7 @@ export function FAQ() {
                     aria-expanded={openIndex === index}
                     aria-controls={`faq-answer-${index}`}
                   >
-                    <h3 className="font-semibold text-white pr-4" itemProp="name">
+                    <h3 className="font-semibold text-white pr-4" {...({ itemProp: 'name' } as any)}>
                       {faq.question}
                     </h3>
                     <svg
@@ -66,10 +67,9 @@ export function FAQ() {
                     <div
                       id={`faq-answer-${index}`}
                       className="px-6 pb-4"
-                      itemScope
-                      itemType="https://schema.org/Answer"
+                      {...({ itemScope: true, itemType: 'https://schema.org/Answer' } as any)}
                     >
-                      <p className="text-text-1 text-small leading-body" itemProp="text">
+                      <p className="text-text-1 text-small leading-body" {...({ itemProp: 'text' } as any)}>
                         {faq.answer}
                       </p>
                     </div>
