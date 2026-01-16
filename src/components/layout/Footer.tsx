@@ -8,9 +8,17 @@ export function Footer() {
   const { t } = useLanguage()
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // Check if we're on the homepage
+    const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
+    
+    if (isHomepage) {
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else {
+      // Navigate to homepage with anchor
+      window.location.href = `/#${id}`
     }
   }
 
@@ -33,7 +41,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   onClick={(e) => {
                     e.preventDefault()
                     scrollToSection('about')
@@ -45,7 +53,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#features"
+                  href="/#features"
                   onClick={(e) => {
                     e.preventDefault()
                     scrollToSection('features')
@@ -57,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#community"
+                  href="/#community"
                   onClick={(e) => {
                     e.preventDefault()
                     scrollToSection('community')
@@ -69,7 +77,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#faq"
+                  href="/#faq"
                   onClick={(e) => {
                     e.preventDefault()
                     scrollToSection('faq')

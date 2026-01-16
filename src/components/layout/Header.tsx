@@ -20,9 +20,17 @@ export function Header() {
   }, [])
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // Check if we're on the homepage
+    const isHomepage = window.location.pathname === '/' || window.location.pathname === ''
+    
+    if (isHomepage) {
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    } else {
+      // Navigate to homepage with anchor
+      window.location.href = `/#${id}`
     }
   }
 
@@ -49,10 +57,14 @@ export function Header() {
       <Container>
         <div className="flex items-center justify-between h-16">
           <a
-            href="#hero"
+            href="/"
             onClick={(e) => {
-              e.preventDefault()
-              scrollToSection('hero')
+              const isHomepage = window.location.pathname === '/' || window.location.pathname === ''
+              if (isHomepage) {
+                e.preventDefault()
+                scrollToSection('hero')
+              }
+              // Otherwise, let the link navigate normally to homepage
             }}
             className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer"
             aria-label="Vibe - Home"
@@ -62,19 +74,22 @@ export function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                onClick={(e) => {
-                  e.preventDefault()
-                  scrollToSection(item.id)
-                }}
-                className="text-small text-text-1 hover:text-text-0 transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
+              return (
+                <a
+                  key={item.id}
+                  href={isHomepage ? `#${item.id}` : `/#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    scrollToSection(item.id)
+                  }}
+                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                >
+                  {item.label}
+                </a>
+              )
+            })}
           </nav>
 
           <div className="flex items-center gap-4">
