@@ -11,12 +11,12 @@ export function ForWhom() {
   const groups = [
     {
       icon: (
-        <svg className="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-dark-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
         </svg>
       ),
-      bgColor: 'bg-violet-500/10',
-      hoverBorder: 'hover:border-violet-500/50',
+      bgColor: 'bg-dark-green-500/10',
+      hoverBorder: 'hover:border-dark-green-500/50',
       ...t.forWhom.djs,
     },
     {
@@ -41,12 +41,12 @@ export function ForWhom() {
     },
     {
       icon: (
-        <svg className="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-dark-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      bgColor: 'bg-violet-500/10',
-      hoverBorder: 'hover:border-violet-500/50',
+      bgColor: 'bg-dark-green-500/10',
+      hoverBorder: 'hover:border-dark-green-500/50',
       ...t.forWhom.beginners,
     },
   ]
@@ -56,7 +56,7 @@ export function ForWhom() {
       <Container>
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-dark-green-400 to-cyan-400 bg-clip-text text-transparent">
               {t.forWhom.title}
             </span>
           </h2>
@@ -68,7 +68,7 @@ export function ForWhom() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {groups.map((group, index) => (
             <Card key={index} className={group.hoverBorder}>
-              <div className={`w-12 h-12 mb-5 ${group.bgColor} rounded-lg flex items-center justify-center`}>
+              <div className={`w-16 h-16 mb-5 ${group.bgColor} rounded-lg flex items-center justify-center`}>
                 {group.icon}
               </div>
               <h3 className="font-display text-h3 font-semibold mb-3 text-text-0">{group.title}</h3>

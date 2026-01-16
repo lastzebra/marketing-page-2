@@ -11,7 +11,7 @@ export function LanguageToggle() {
         onClick={() => setLanguage('en')}
         className={`px-3 py-1.5 text-small rounded-md transition-all ${
           language === 'en'
-            ? 'bg-violet/20 text-violet'
+            ? 'bg-dark-green/20 text-dark-green'
             : 'text-text-2 hover:text-text-1'
         }`}
       >
@@ -21,7 +21,7 @@ export function LanguageToggle() {
         onClick={() => setLanguage('de')}
         className={`px-3 py-1.5 text-small rounded-md transition-all ${
           language === 'de'
-            ? 'bg-violet/20 text-violet'
+            ? 'bg-dark-green/20 text-dark-green'
             : 'text-text-2 hover:text-text-1'
         }`}
       >

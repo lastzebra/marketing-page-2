@@ -2,17 +2,17 @@ import { ReactNode } from 'react'
 
 interface GlowProps {
   children: ReactNode
-  variant?: 'violet' | 'cyan' | 'teal' | 'amber'
+  variant?: 'dark-green' | 'cyan' | 'teal' | 'amber'
   intensity?: 'soft' | 'medium' | 'strong'
   className?: string
 }
 
-export function Glow({ children, variant = 'violet', intensity = 'medium', className = '' }: GlowProps) {
+export function Glow({ children, variant = 'dark-green', intensity = 'medium', className = '' }: GlowProps) {
   const shadows = {
-    violet: {
-      soft: 'shadow-[0_0_20px_rgba(124,58,237,0.2)]',
-      medium: 'shadow-glow-violet',
-      strong: 'shadow-[0_0_48px_rgba(124,58,237,0.5)]',
+    'dark-green': {
+      soft: 'shadow-[0_0_20px_rgba(22,101,52,0.2)]',
+      medium: 'shadow-glow-dark-green',
+      strong: 'shadow-[0_0_48px_rgba(22,101,52,0.5)]',
     },
     cyan: {
       soft: 'shadow-[0_0_20px_rgba(34,211,238,0.2)]',

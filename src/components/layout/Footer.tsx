@@ -87,7 +87,7 @@ export function Footer() {
             </p>
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-small text-violet hover:text-violet/80 transition-colors"
+              className="text-small text-dark-green hover:text-dark-green/80 transition-colors"
             >
               {t.nav.openApp} →
             </button>

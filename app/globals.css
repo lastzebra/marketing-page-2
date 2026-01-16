@@ -35,23 +35,23 @@
   --text-2: rgba(255,255,255,0.52); /* muted */
 
   /* Accents */
-  --violet: #7C3AED;   /* neon violet */
+  --dark-green: #166534;   /* dark green - ehemals violet */
   --teal: #14B8A6;     /* teal glow */
   --cyan: #22D3EE;     /* soft cyan */
   --amber: #F59E0B;    /* warm spark */
 
   /* Gradients */
   --grad-hero: radial-gradient(1200px circle at 20% 10%,
-      rgba(124,58,237,0.25), transparent 55%),
+      rgba(22,101,52,0.25), transparent 55%),
     radial-gradient(900px circle at 80% 30%,
       rgba(20,184,166,0.18), transparent 60%),
     linear-gradient(180deg, var(--bg-0), var(--bg-1));
 
-  --grad-glow: linear-gradient(90deg, var(--violet), var(--cyan), var(--teal));
+  --grad-glow: linear-gradient(90deg, var(--dark-green), var(--cyan), var(--teal));
 
   /* Shadows / Glows */
   --shadow-soft: 0 10px 40px rgba(0,0,0,0.55);
-  --glow-violet: 0 0 32px rgba(124,58,237,0.35);
+  --glow-dark-green: 0 0 32px rgba(22,101,52,0.35);
   --glow-teal: 0 0 28px rgba(20,184,166,0.28);
 
   /* Radius */

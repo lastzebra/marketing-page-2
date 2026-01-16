@@ -10,7 +10,7 @@ export function HowItWorks() {
   const steps = [
     {
       number: 1,
-      color: 'violet',
+      color: 'dark-green',
       ...t.howItWorks.steps.step1,
     },
     {
@@ -26,10 +26,10 @@ export function HowItWorks() {
   ]
 
   const colors = {
-    violet: {
-      bg: 'bg-violet-500/10',
-      border: 'border-violet-500/20',
-      text: 'text-violet-400',
+    dark-green: {
+      bg: 'bg-dark-green-500/10',
+      border: 'border-dark-green-500/20',
+      text: 'text-dark-green',
     },
     cyan: {
       bg: 'bg-cyan-500/10',
@@ -48,7 +48,7 @@ export function HowItWorks() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-dark-green to-cyan-400 bg-clip-text text-transparent">
               {t.howItWorks.title}
             </span>
           </h2>

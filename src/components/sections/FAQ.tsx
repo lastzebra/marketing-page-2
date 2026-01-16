@@ -23,7 +23,7 @@ export function FAQ() {
       <Container className="max-w-4xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-dark-green-400 to-cyan-400 bg-clip-text text-transparent">
               {t.faq.title}
             </span>
           </h2>

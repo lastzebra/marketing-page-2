@@ -37,12 +37,13 @@ module.exports = {
         'text-0': 'var(--text-0)',
         'text-1': 'var(--text-1)',
         'text-2': 'var(--text-2)',
-        'violet': 'var(--violet)',
+        'dark-green': 'var(--dark-green)',
         'teal': 'var(--teal)',
         'cyan': 'var(--cyan)',
         'amber': 'var(--amber)',
         // Legacy support
-        'neon-violet': 'var(--violet)',
+        'violet': 'var(--dark-green)',
+        'neon-violet': 'var(--dark-green)',
         'neon-cyan': 'var(--cyan)',
         'warm-amber': 'var(--amber)',
       },
@@ -53,7 +54,8 @@ module.exports = {
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
-        'glow-violet': 'var(--glow-violet)',
+        'glow-dark-green': 'var(--glow-dark-green)',
+        'glow-violet': 'var(--glow-dark-green)', // Legacy support
         'glow-teal': 'var(--glow-teal)',
       },
       maxWidth: {

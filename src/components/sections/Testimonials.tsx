@@ -13,7 +13,7 @@ export function Testimonials() {
       quote: t.testimonials.items.dj.quote,
       name: t.testimonials.items.dj.name,
       location: t.testimonials.items.dj.location,
-      color: 'violet',
+      color: 'dark-green',
     },
     {
       quote: t.testimonials.items.producer.quote,
@@ -30,9 +30,9 @@ export function Testimonials() {
   ]
 
   const colors = {
-    violet: {
-      icon: 'text-violet-400',
-      bg: 'bg-violet-500/20',
+    dark-green: {
+      icon: 'text-dark-green-400',
+      bg: 'bg-dark-green-500/20',
       initial: 'V',
     },
     cyan: {
@@ -52,7 +52,7 @@ export function Testimonials() {
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
-            <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-dark-green-400 to-cyan-400 bg-clip-text text-transparent">
               {t.testimonials.title}
             </span>
           </h2>
