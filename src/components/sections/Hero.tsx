@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { Button } from '../ui/Button'
 import { Section } from '../layout/Section'
 import { Container } from '../layout/Container'
+import { LINKS } from '@/config/links'
 
 export function Hero() {
   const { t } = useLanguage()
@@ -35,8 +36,8 @@ export function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 pt-6">
-          <Button as="link" href="/app" variant="primary">{t.hero.ctaPrimary}</Button>
-          <Button as="link" href="#demo" variant="secondary">{t.hero.ctaSecondary}</Button>
+          <Button as="link" href={LINKS.app} variant="primary">{t.hero.ctaPrimary}</Button>
+          <Button as="link" href={LINKS.demo} variant="secondary">{t.hero.ctaSecondary}</Button>
         </div>
       </Container>
     </Section>

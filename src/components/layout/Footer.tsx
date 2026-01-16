@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext'
 import { Container } from './Container'
+import { LINKS } from '@/config/links'
 
 export function Footer() {
   const { t } = useLanguage()
@@ -84,12 +85,12 @@ export function Footer() {
             <h4 className="text-small font-semibold mb-4 text-text-0">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy" className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a href={LINKS.privacy} className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.privacy}
                 </a>
               </li>
               <li>
-                <a href="/terms" className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a href={LINKS.terms} className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.terms}
                 </a>
               </li>
@@ -102,7 +103,9 @@ export function Footer() {
               Join the community and start creating.
             </p>
             <a
-              href="/app"
+              href={LINKS.app}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-small text-dark-green hover:text-dark-green/80 transition-colors"
             >
               {t.nav.openApp} →

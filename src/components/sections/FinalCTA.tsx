@@ -4,6 +4,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { Section } from '../layout/Section'
 import { Container } from '../layout/Container'
 import { Button } from '../ui/Button'
+import { LINKS } from '@/config/links'
 
 export function FinalCTA() {
   const { t } = useLanguage()
@@ -26,9 +27,9 @@ export function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
-          <Button as="link" href="/app" variant="primary">{t.cta.buttons.openApp}</Button>
-          <Button as="link" href="#community" variant="secondary">{t.cta.buttons.joinCommunity}</Button>
-          <Button as="link" href="mailto:earlyaccess@vibe.app?subject=Early%20Access%20Request" variant="secondary">{t.cta.buttons.earlyAccess}</Button>
+          <Button as="link" href={LINKS.app} variant="primary">{t.cta.buttons.openApp}</Button>
+          <Button as="link" href={LINKS.community} variant="secondary">{t.cta.buttons.joinCommunity}</Button>
+          <Button as="link" href={LINKS.earlyAccess} variant="secondary">{t.cta.buttons.earlyAccess}</Button>
         </div>
       </Container>
     </Section>

@@ -5,6 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { Button } from '../ui/Button'
 import { LanguageToggle } from '../ui/LanguageToggle'
 import { Container } from './Container'
+import { LINKS } from '@/config/links'
 
 export function Header() {
   const { t } = useLanguage()
@@ -76,7 +77,7 @@ export function Header() {
 
           <div className="flex items-center gap-4">
             <LanguageToggle />
-            <Button as="link" href="/app" variant="primary">
+            <Button as="link" href={LINKS.app} variant="primary">
               {t.nav.openApp}
             </Button>
           </div>
