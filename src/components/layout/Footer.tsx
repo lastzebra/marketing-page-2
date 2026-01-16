@@ -30,36 +30,52 @@ export function Footer() {
             <h4 className="text-small font-semibold mb-4 text-text-0">Links</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection('about')}
+                <a
+                  href="#about"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    scrollToSection('about')
+                  }}
                   className="text-small text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.about}
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('features')}
+                <a
+                  href="#features"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    scrollToSection('features')
+                  }}
                   className="text-small text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.features}
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('community')}
+                <a
+                  href="#community"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    scrollToSection('community')
+                  }}
                   className="text-small text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.community}
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('faq')}
+                <a
+                  href="#faq"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    scrollToSection('faq')
+                  }}
                   className="text-small text-text-1 hover:text-text-0 transition-colors"
                 >
                   {t.footer.links.faq}
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -68,12 +84,12 @@ export function Footer() {
             <h4 className="text-small font-semibold mb-4 text-text-0">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a href="/privacy" className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.privacy}
                 </a>
               </li>
               <li>
-                <a href="#" className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a href="/terms" className="text-small text-text-1 hover:text-text-0 transition-colors">
                   {t.footer.legal.terms}
                 </a>
               </li>
@@ -85,12 +101,12 @@ export function Footer() {
             <p className="text-small text-text-1 mb-4">
               Join the community and start creating.
             </p>
-            <button
-              onClick={() => scrollToSection('hero')}
+            <a
+              href="/app"
               className="text-small text-dark-green hover:text-dark-green/80 transition-colors"
             >
               {t.nav.openApp} →
-            </button>
+            </a>
           </div>
         </div>
 

@@ -46,29 +46,37 @@ export function Header() {
     >
       <Container>
         <div className="flex items-center justify-between h-16">
-          <button
-            onClick={() => scrollToSection('hero')}
-            className="font-display text-h3 font-bold bg-grad-glow bg-clip-text text-transparent"
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault()
+              scrollToSection('hero')
+            }}
+            className="font-display text-h3 font-bold bg-grad-glow bg-clip-text text-transparent cursor-pointer"
           >
             Vibe
-          </button>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item.id)
+                }}
                 className="text-small text-text-1 hover:text-text-0 transition-colors"
               >
                 {item.label}
-              </button>
+              </a>
             ))}
           </div>
 
           <div className="flex items-center gap-4">
             <LanguageToggle />
-            <Button variant="primary" onClick={() => scrollToSection('hero')}>
+            <Button as="link" href="/app" variant="primary">
               {t.nav.openApp}
             </Button>
           </div>

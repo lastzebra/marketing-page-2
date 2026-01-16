@@ -26,9 +26,9 @@ export function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
-          <Button variant="primary">{t.cta.buttons.openApp}</Button>
-          <Button variant="secondary">{t.cta.buttons.joinCommunity}</Button>
-          <Button variant="secondary">{t.cta.buttons.earlyAccess}</Button>
+          <Button as="link" href="/app" variant="primary">{t.cta.buttons.openApp}</Button>
+          <Button as="link" href="#community" variant="secondary">{t.cta.buttons.joinCommunity}</Button>
+          <Button as="link" href="mailto:earlyaccess@vibe.app?subject=Early%20Access%20Request" variant="secondary">{t.cta.buttons.earlyAccess}</Button>
         </div>
       </Container>
     </Section>

@@ -35,8 +35,8 @@ export function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 pt-6">
-          <Button variant="primary">{t.hero.ctaPrimary}</Button>
-          <Button variant="secondary">{t.hero.ctaSecondary}</Button>
+          <Button as="link" href="/app" variant="primary">{t.hero.ctaPrimary}</Button>
+          <Button as="link" href="#demo" variant="secondary">{t.hero.ctaSecondary}</Button>
         </div>
       </Container>
     </Section>
