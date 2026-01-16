@@ -86,12 +86,22 @@ export function Footer() {
             <h4 className="text-small font-semibold mb-4 text-text-0">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href={LINKS.privacy} className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a
+                  href={LINKS.privacy}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                >
                   {t.footer.legal.privacy}
                 </a>
               </li>
               <li>
-                <a href={LINKS.terms} className="text-small text-text-1 hover:text-text-0 transition-colors">
+                <a
+                  href={LINKS.terms}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                >
                   {t.footer.legal.terms}
                 </a>
               </li>
