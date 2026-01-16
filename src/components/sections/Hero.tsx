@@ -11,7 +11,7 @@ import { DemoVideoModal } from '../media/DemoVideoModal'
 export function Hero() {
   const { t } = useLanguage()
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const demoButtonRef = useRef<HTMLButtonElement | null>(null)
+  const demoButtonRef = useRef<HTMLElement | null>(null)
 
   const handleDemoClick = () => {
     // Store reference to the button that opened the modal
