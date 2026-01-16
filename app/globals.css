@@ -35,32 +35,34 @@
   --text-2: rgba(255,255,255,0.52); /* muted */
 
   /* Accents - Primary Gradient System */
-  --accent-blue: #38BDF8;      /* sky - light blue/cyan */
-  --accent-purple: #7C3AED;    /* violet/purple */
-  --teal: #14B8A6;             /* teal glow - secondary accent */
-  --amber: #F59E0B;            /* warm spark - secondary accent */
+  --violet: #7C3AED;      /* neon violet */
+  --teal: #14B8A6;        /* teal glow */
+  --cyan: #22D3EE;        /* soft cyan */
+  --amber: #F59E0B;       /* warm spark */
 
-  /* Primary Gradients - Light Blue → Purple */
-  --grad-accent: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
-  --grad-accent-soft: linear-gradient(135deg, rgba(56,189,248,0.15) 0%, rgba(124,58,237,0.15) 100%);
+  /* Primary Gradients - Cyan → Violet */
+  --grad-accent: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 100%);
+  --grad-accent-soft: linear-gradient(135deg, rgba(34,211,238,0.15) 0%, rgba(124,58,237,0.15) 100%);
   
   /* Hero Background Gradient */
   --grad-hero: radial-gradient(1200px circle at 20% 10%,
-      rgba(56,189,248,0.20), transparent 55%),
+      rgba(34,211,238,0.20), transparent 55%),
     radial-gradient(900px circle at 80% 30%,
       rgba(124,58,237,0.18), transparent 60%),
     linear-gradient(180deg, var(--bg-0), var(--bg-1));
 
   /* Main Glow Gradient */
-  --grad-glow: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  --grad-glow: linear-gradient(135deg, var(--cyan), var(--violet));
 
   /* Shadows / Glows */
   --shadow-soft: 0 10px 40px rgba(0,0,0,0.55);
-  --glow-accent: 0 0 32px rgba(56,189,248,0.25), 0 0 48px rgba(124,58,237,0.20);
+  --glow-accent: 0 0 32px rgba(34,211,238,0.25), 0 0 48px rgba(124,58,237,0.20);
   --glow-teal: 0 0 28px rgba(20,184,166,0.28);
   
   /* Legacy support (keep for compatibility) */
-  --dark-green: var(--accent-purple);
+  --accent-blue: var(--cyan);
+  --accent-purple: var(--violet);
+  --dark-green: var(--violet);
   --glow-dark-green: var(--glow-accent);
 
   /* Radius */

@@ -8,18 +8,17 @@ export function Benefits() {
   const { t } = useLanguage()
 
   const benefits = [
-    { icon: 'accent-purple', ...t.benefits.items.discover },
-    { icon: 'accent-blue', ...t.benefits.items.buildSets },
+    { icon: 'violet', ...t.benefits.items.discover },
+    { icon: 'cyan', ...t.benefits.items.buildSets },
     { icon: 'amber', ...t.benefits.items.generate },
-    { icon: 'accent-purple', ...t.benefits.items.workflows },
+    { icon: 'violet', ...t.benefits.items.workflows },
     { icon: 'cyan', ...t.benefits.items.filters },
     { icon: 'amber', ...t.benefits.items.export },
   ]
 
   const iconColors: Record<string, string> = {
-    'accent-purple': 'text-accent-purple',
-    'accent-blue': 'text-accent-blue',
-    'cyan': 'text-accent-blue',
+    'violet': 'text-violet',
+    'cyan': 'text-cyan',
     'amber': 'text-amber',
   }
 

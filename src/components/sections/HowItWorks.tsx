@@ -10,7 +10,7 @@ export function HowItWorks() {
   const steps = [
     {
       number: 1,
-      color: 'accent-purple',
+      color: 'violet',
       ...t.howItWorks.steps.step1,
     },
     {
@@ -26,25 +26,20 @@ export function HowItWorks() {
   ]
 
   const colors: Record<string, { bg: string; border: string; text: string }> = {
-    'accent-purple': {
-      bg: 'bg-accent-purple/10',
-      border: 'border-accent-purple/20',
-      text: 'text-accent-purple',
+    'violet': {
+      bg: 'bg-violet/10',
+      border: 'border-violet/20',
+      text: 'text-violet',
     },
-    'accent-blue': {
-      bg: 'bg-accent-blue/10',
-      border: 'border-accent-blue/20',
-      text: 'text-accent-blue',
+    'cyan': {
+      bg: 'bg-cyan/10',
+      border: 'border-cyan/20',
+      text: 'text-cyan',
     },
-    cyan: {
-      bg: 'bg-accent-blue/10',
-      border: 'border-accent-blue/20',
-      text: 'text-accent-blue',
-    },
-    amber: {
-      bg: 'bg-amber-500/10',
-      border: 'border-amber-500/20',
-      text: 'text-amber-400',
+    'amber': {
+      bg: 'bg-amber/10',
+      border: 'border-amber/20',
+      text: 'text-amber',
     },
   }
 

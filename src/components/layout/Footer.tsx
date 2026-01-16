@@ -106,7 +106,7 @@ export function Footer() {
               href={LINKS.app}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-small text-accent-purple hover:text-accent-purple/80 transition-colors"
+              className="text-small text-violet hover:text-violet/80 transition-colors"
             >
               {t.nav.openApp} →
             </a>

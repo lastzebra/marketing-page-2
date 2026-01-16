@@ -55,7 +55,7 @@ export function CursorGlow({ children, className = '' }: CursorGlowProps) {
       <div
         className="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-300 cursor-glow-active:opacity-100"
         style={{
-          background: 'radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(56,189,248,0.15), transparent 40%)',
+          background: 'radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(34,211,238,0.15), transparent 40%)',
         }}
       />
     </div>

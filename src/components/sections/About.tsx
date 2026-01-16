@@ -11,11 +11,11 @@ export function About() {
   const features = [
     {
       icon: (
-        <svg className="w-7 h-7 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-7 h-7 text-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z M10.5 7.5v6m3-3h-6" />
         </svg>
       ),
-      bgColor: 'bg-accent-purple/10',
+      bgColor: 'bg-violet/10',
       ...t.about.features.discover,
     },
     {
@@ -38,11 +38,11 @@ export function About() {
     },
     {
       icon: (
-        <svg className="w-7 h-7 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-7 h-7 text-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
         </svg>
       ),
-      bgColor: 'bg-accent-purple/10',
+      bgColor: 'bg-violet/10',
       ...t.about.features.stayInspired,
     },
   ]

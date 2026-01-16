@@ -37,17 +37,17 @@ module.exports = {
         'text-0': 'var(--text-0)',
         'text-1': 'var(--text-1)',
         'text-2': 'var(--text-2)',
-        /* Primary Accent Colors - Light Blue → Purple */
-        'accent-blue': 'var(--accent-blue)',
-        'accent-purple': 'var(--accent-purple)',
+        /* Primary Accent Colors - Cyan → Violet */
+        'violet': 'var(--violet)',
         'teal': 'var(--teal)',
+        'cyan': 'var(--cyan)',
         'amber': 'var(--amber)',
         /* Legacy support (mapped to new colors) */
-        'dark-green': 'var(--accent-purple)',
-        'cyan': 'var(--accent-blue)',
-        'violet': 'var(--accent-purple)',
-        'neon-violet': 'var(--accent-purple)',
-        'neon-cyan': 'var(--accent-blue)',
+        'accent-blue': 'var(--cyan)',
+        'accent-purple': 'var(--violet)',
+        'dark-green': 'var(--violet)',
+        'neon-violet': 'var(--violet)',
+        'neon-cyan': 'var(--cyan)',
         'warm-amber': 'var(--amber)',
       },
       borderRadius: {

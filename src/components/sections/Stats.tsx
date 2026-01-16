@@ -12,19 +12,19 @@ export function Stats() {
       value: t.stats.genres.value,
       title: t.stats.genres.title,
       description: t.stats.genres.description,
-      gradient: 'from-accent-blue to-cyan',
+      gradient: 'from-cyan to-teal',
     },
     {
       value: t.stats.tracks.value,
       title: t.stats.tracks.title,
       description: t.stats.tracks.description,
-      gradient: 'from-cyan-400 to-amber-400',
+      gradient: 'from-cyan to-amber',
     },
     {
       value: t.stats.sets.value,
       title: t.stats.sets.title,
       description: t.stats.sets.description,
-      gradient: 'from-amber to-accent-purple',
+      gradient: 'from-amber to-violet',
     },
   ]
 
