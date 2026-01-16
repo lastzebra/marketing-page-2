@@ -8,6 +8,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', 'ui-sans-serif', 'system-ui'],
+        display: ['var(--font-display)', 'ui-sans-serif', 'system-ui'],
+      },
+      fontSize: {
+        'h1': 'var(--h1)',
+        'h2': 'var(--h2)',
+        'h3': 'var(--h3)',
+        'body': 'var(--body)',
+        'body-lg': 'var(--body-lg)',
+        'small': 'var(--small)',
+      },
+      lineHeight: {
+        'tight': 'var(--lh-tight)',
+        'body': 'var(--lh-body)',
+      },
+      letterSpacing: {
+        'tight': 'var(--tracking-tight)',
+        'normal': 'var(--tracking-normal)',
+      },
       colors: {
         'bg-0': 'var(--bg-0)',
         'bg-1': 'var(--bg-1)',

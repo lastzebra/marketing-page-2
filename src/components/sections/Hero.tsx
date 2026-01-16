@@ -16,7 +16,7 @@ export function Hero() {
       {/* Content */}
       <Container className="relative z-10 text-center space-y-10 sm:space-y-12">
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight">
+        <h1 className="font-display text-h1 font-bold leading-tight tracking-tight">
           <span className="block bg-grad-glow bg-clip-text text-transparent">
             {t.hero.headline.line1}
           </span>
@@ -29,7 +29,7 @@ export function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl md:text-2xl text-text-1 max-w-2xl mx-auto leading-relaxed font-normal">
+        <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body font-normal">
           {t.hero.subheadline}
         </p>
 

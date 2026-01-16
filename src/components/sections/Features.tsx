@@ -69,7 +69,7 @@ export function Features() {
     <Section id="features">
       <Container>
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.features.title}
             </span>
@@ -82,8 +82,8 @@ export function Features() {
               <div className={`w-10 h-10 mb-5 ${feature.bgColor} rounded-lg flex items-center justify-center`}>
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
+              <h3 className="font-display text-h3 font-semibold mb-3 text-text-0">{feature.title}</h3>
+              <p className="text-text-1 text-small leading-body">{feature.description}</p>
             </Card>
           ))}
         </div>

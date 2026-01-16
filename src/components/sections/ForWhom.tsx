@@ -55,12 +55,12 @@ export function ForWhom() {
     <Section id="for-whom">
       <Container>
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.forWhom.title}
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body">
             {t.forWhom.subtitle}
           </p>
         </div>
@@ -71,8 +71,8 @@ export function ForWhom() {
               <div className={`w-12 h-12 mb-5 ${group.bgColor} rounded-lg flex items-center justify-center`}>
                 {group.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">{group.title}</h3>
-              <p className="text-gray-400 leading-relaxed text-sm">{group.description}</p>
+              <h3 className="font-display text-h3 font-semibold mb-3 text-text-0">{group.title}</h3>
+              <p className="text-text-1 leading-body text-small">{group.description}</p>
             </Card>
           ))}
         </div>

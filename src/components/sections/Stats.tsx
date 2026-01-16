@@ -32,7 +32,7 @@ export function Stats() {
     <Section id="stats">
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.stats.title}
             </span>
@@ -45,8 +45,8 @@ export function Stats() {
               <div className={`text-5xl sm:text-6xl font-bold mb-3 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}>
                 {stat.value}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">{stat.title}</h3>
-              <p className="text-gray-400 text-sm">{stat.description}</p>
+              <h3 className="font-display text-h3 font-semibold mb-2 text-text-0">{stat.title}</h3>
+              <p className="text-text-1 text-small">{stat.description}</p>
             </div>
           ))}
         </div>

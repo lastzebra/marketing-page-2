@@ -22,7 +22,7 @@ export function FAQ() {
     <Section id="faq">
       <Container className="max-w-4xl">
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.faq.title}
             </span>
@@ -53,7 +53,7 @@ export function FAQ() {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-4">
-                  <p className="text-gray-400 text-sm leading-relaxed">{faq.answer}</p>
+                  <p className="text-text-1 text-small leading-body">{faq.answer}</p>
                 </div>
               )}
             </div>

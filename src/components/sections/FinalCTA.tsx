@@ -16,12 +16,12 @@ export function FinalCTA() {
       </div>
 
       <Container className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
+        <h2 className="font-display text-h1 font-bold mb-6 tracking-tight">
           <span className="bg-gradient-to-r from-violet-400 via-cyan-400 to-amber-400 bg-clip-text text-transparent">
             {t.cta.title}
           </span>
         </h2>
-        <p className="text-lg sm:text-xl text-text-1 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-body-lg text-text-1 mb-10 max-w-2xl mx-auto leading-body">
           {t.cta.subtitle}
         </p>
 

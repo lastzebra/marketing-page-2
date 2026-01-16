@@ -51,12 +51,12 @@ export function About() {
     <Section id="about">
       <Container>
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-grad-glow bg-clip-text text-transparent">
               {t.about.title}
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-text-1 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body">
             {t.about.subtitle}
           </p>
         </div>
@@ -67,8 +67,8 @@ export function About() {
               <div className={`w-10 h-10 mb-5 ${feature.bgColor} rounded-md flex items-center justify-center`}>
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-text-0">{feature.title}</h3>
-              <p className="text-text-1 leading-relaxed text-sm">{feature.description}</p>
+              <h3 className="font-display text-h3 font-semibold mb-3 text-text-0">{feature.title}</h3>
+              <p className="text-text-1 leading-body text-small">{feature.description}</p>
             </Card>
           ))}
         </div>

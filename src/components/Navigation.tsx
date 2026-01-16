@@ -47,7 +47,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-bold bg-grad-glow bg-clip-text text-transparent"
+            className="font-display text-h3 font-bold bg-grad-glow bg-clip-text text-transparent"
           >
             Vibe
           </button>
@@ -58,7 +58,7 @@ export function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm text-text-1 hover:text-text-0 transition-colors"
+                className="text-small text-text-1 hover:text-text-0 transition-colors"
               >
                 {item.label}
               </button>

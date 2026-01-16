@@ -47,12 +47,12 @@ export function HowItWorks() {
     <Section id="how-it-works">
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.howItWorks.title}
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-body-lg text-text-1 max-w-2xl mx-auto leading-body">
             {t.howItWorks.subtitle}
           </p>
         </div>
@@ -65,8 +65,8 @@ export function HowItWorks() {
                 <div className={`w-16 h-16 mx-auto mb-6 ${color.bg} rounded-full flex items-center justify-center border ${color.border}`}>
                   <span className={`text-2xl font-bold ${color.text}`}>{step.number}</span>
                 </div>
-                <h3 className="text-2xl font-semibold mb-4 text-white">{step.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{step.description}</p>
+                <h3 className="font-display text-h3 font-semibold mb-4 text-text-0">{step.title}</h3>
+                <p className="text-text-1 text-small leading-body">{step.description}</p>
               </div>
             )
           })}

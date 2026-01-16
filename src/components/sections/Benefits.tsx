@@ -26,7 +26,7 @@ export function Benefits() {
     <Section id="benefits">
       <Container>
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.benefits.title}
             </span>
@@ -42,8 +42,8 @@ export function Benefits() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">{benefit.title}</h3>
-                <p className="text-gray-400 text-sm">{benefit.description}</p>
+                <h3 className="font-display text-h3 font-semibold mb-2 text-text-0">{benefit.title}</h3>
+                <p className="text-text-1 text-small">{benefit.description}</p>
               </div>
             </div>
           ))}

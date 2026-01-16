@@ -3,6 +3,25 @@
 @tailwind utilities;
 
 :root {
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Inter", "Segoe UI", Arial, sans-serif;
+  --font-display: ui-sans-serif, system-ui, -apple-system, "Sora", "Inter", "Segoe UI", Arial, sans-serif;
+
+  /* Type scale */
+  --h1: clamp(2.4rem, 5vw, 4.2rem);
+  --h2: clamp(1.8rem, 3vw, 2.6rem);
+  --h3: 1.35rem;
+
+  --body: 1rem;
+  --body-lg: 1.125rem;
+  --small: 0.9rem;
+
+  --lh-tight: 1.05;
+  --lh-body: 1.55;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+
   /* Base */
   --bg-0: #05060A;      /* near-black */
   --bg-1: #0B1020;      /* deep navy */
@@ -46,8 +65,34 @@
 
 @layer base {
   body {
+    font-family: var(--font-sans);
     background-color: var(--bg-0);
     color: var(--text-0);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: var(--tracking-tight);
+    line-height: var(--lh-tight);
+  }
+
+  h1 {
+    font-size: var(--h1);
+  }
+
+  h2 {
+    font-size: var(--h2);
+  }
+
+  h3 {
+    font-size: var(--h3);
+  }
+
+  p, body {
+    font-size: var(--body);
+    line-height: var(--lh-body);
+    letter-spacing: var(--tracking-normal);
   }
 }
 

@@ -51,7 +51,7 @@ export function Testimonials() {
     <Section id="testimonials">
       <Container className="max-w-6xl">
         <div className="text-center mb-16 sm:mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-5 tracking-tight">
+          <h2 className="font-display text-h2 font-bold mb-5 tracking-tight">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               {t.testimonials.title}
             </span>
@@ -68,14 +68,14 @@ export function Testimonials() {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                 </div>
-                <p className="text-gray-300 mb-6 text-sm leading-relaxed">{testimonial.quote}</p>
+                <p className="text-text-1 mb-6 text-small leading-body">{testimonial.quote}</p>
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 ${color.bg} rounded-full flex items-center justify-center`}>
                     <span className={`${color.icon} font-semibold`}>{color.initial}</span>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-xs text-gray-500">{testimonial.location}</div>
+                    <div className="text-small font-semibold text-text-0">{testimonial.name}</div>
+                    <div className="text-small text-text-2">{testimonial.location}</div>
                   </div>
                 </div>
               </Card>
