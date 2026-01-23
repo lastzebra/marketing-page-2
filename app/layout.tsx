@@ -86,7 +86,6 @@ export const metadata: Metadata = {
   },
   category: 'music',
   classification: 'Music Discovery Application',
-  themeColor: '#000000',
   icons: {
     icon: '/favicon.svg',
     apple: '/apple-touch-icon.png',
@@ -100,6 +99,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  themeColor: '#000000',
 }
 
 export default function RootLayout({
