@@ -96,8 +96,8 @@ export function Header() {
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center flex-1 justify-center" aria-label="Main navigation">
-            <div className="flex items-center gap-0 w-full max-w-4xl justify-between">
+          <nav className="hidden lg:flex items-center flex-1 justify-center mx-6" aria-label="Main navigation">
+            <div className="flex items-center w-full max-w-5xl justify-between">
               {navItems.map((item) => {
                 const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
                 return (
@@ -117,7 +117,7 @@ export function Header() {
             </div>
           </nav>
 
-          <div className="flex items-center gap-3 lg:gap-4">
+          <div className="flex items-center gap-3 lg:gap-4 flex-shrink-0">
             <LanguageToggle />
             <Button 
               as="link" 
