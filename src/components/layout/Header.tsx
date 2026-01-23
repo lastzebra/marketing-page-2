@@ -89,30 +89,32 @@ export function Header() {
               }
               // Otherwise, let the link navigate normally to homepage
             }}
-            className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded"
+            className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded flex-shrink-0"
             aria-label="Vibe - Home"
           >
             Vibe
           </a>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
-            {navItems.map((item) => {
-              const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
-              return (
-                <a
-                  key={item.id}
-                  href={isHomepage ? `#${item.id}` : `/#${item.id}`}
-                  onClick={(e) => {
-                    e.preventDefault()
-                    scrollToSection(item.id)
-                  }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-2 py-1"
-                >
-                  {item.label}
-                </a>
-              )
-            })}
+          <nav className="hidden lg:flex items-center flex-1 justify-center" aria-label="Main navigation">
+            <div className="flex items-center gap-0 w-full max-w-4xl justify-between">
+              {navItems.map((item) => {
+                const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
+                return (
+                  <a
+                    key={item.id}
+                    href={isHomepage ? `#${item.id}` : `/#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      scrollToSection(item.id)
+                    }}
+                    className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-2 py-1 flex-1 text-center"
+                  >
+                    {item.label}
+                  </a>
+                )
+              })}
+            </div>
           </nav>
 
           <div className="flex items-center gap-3 lg:gap-4">
