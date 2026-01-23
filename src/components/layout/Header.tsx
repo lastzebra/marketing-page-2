@@ -97,7 +97,7 @@ export function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center flex-1 justify-center mx-6" aria-label="Main navigation">
-            <div className="flex items-center w-full max-w-5xl justify-between">
+            <div className="flex items-center gap-4 xl:gap-6">
               {navItems.map((item) => {
                 const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
                 return (
@@ -108,7 +108,7 @@ export function Header() {
                       e.preventDefault()
                       scrollToSection(item.id)
                     }}
-                    className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-2 py-1 flex-1 text-center"
+                    className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-3 py-1 whitespace-nowrap"
                   >
                     {item.label}
                   </a>
