@@ -87,8 +87,13 @@ export const metadata: Metadata = {
   category: 'music',
   classification: 'Music Discovery Application',
   icons: {
-    icon: '/favicon.svg',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.svg', sizes: '180x180', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
   },
   other: {
     'apple-mobile-web-app-capable': 'yes',
