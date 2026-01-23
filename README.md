@@ -1,4 +1,55 @@
-You are a senior creative front-end developer and digital designer.
+# Viben & Coden – WebApp & GEO Marketing
+
+## Projektübersicht
+
+Dieses Projekt wurde im Rahmen des Wahlmoduls **„Viben & Coden“** umgesetzt und besteht aus:
+
+- **WebApp:** https://thelastzebra.lovable.app/  
+- **Marketing-Website:** https://marketing-page-2-ten.vercel.app/
+
+Beide Teile wurden mit **Vibe-Coding-Methoden** entwickelt und sind öffentlich online zugänglich.
+
+---
+
+## Zielsetzung
+
+Ziel war es, mithilfe von KI-gestütztem Prompting:
+
+- eine **funktionsfähige, responsive WebApp** zu bauen,
+- einen **konkreten, persönlichen Use-Case** umzusetzen,
+- sowie **GEO-optimierte Marketing-Seiten** zu erstellen, die von KI-Suchmaschinen verstanden und zitiert werden können.
+
+---
+
+## Projektbeschreibung
+### WebApp
+
+Die WebApp adressiert einen klar abgegrenzten Use-Case und wurde iterativ mithilfe von KI entwickelt.  
+Schwerpunkte waren:
+
+- Kernfunktionalität
+- einfache Benutzerführung
+- sauberes, modernes UI
+- Responsiveness (Mobile & Desktop)
+
+---
+
+### Marketing-Seiten
+
+Die Marketing-Website orientiert sich an klassischen SaaS-Landing-Pages und umfasst u. a.:
+
+- Landing Page
+- Features
+- FAQ
+
+Die Inhalte sind klar strukturiert, semantisch aufgebaut und auf **Generative Engine Optimization (GEO)** ausgelegt.
+
+---
+
+## Vibe-Coding & Prompts (Auswahl)
+
+**Ideenfindung**
+ You are a senior creative front-end developer and digital designer.
 Build a modern, immersive landing page for a web app aimed at DJs, producers and music lovers who want to discover new music, build DJ sets and generate their own tracks.
 
 GOAL:
@@ -160,3 +211,54 @@ COPY STYLE:
 DELIVERABLE:
 Produce clean, readable code and reusable components.
 Focus on atmosphere, flow and clarity.
+
+
+**UI & UX**
+ux ui - bitte kotrolliere die Dateien, ob alles so optimiert, ist.
+
+**Marketing & GEO**
+kontrolliere bitte die Dateien auf diesen Fokus.
+---
+
+## Entwicklungsprozess
+
+- Definition eines kleinen, realistischen Use-Cases
+- Iteratives Arbeiten mit kurzen, präzisen Prompts
+- Schnelles Testen und Anpassen
+- Trennung von Funktionalität, UI und Content
+- Umsetzung der Marketing-Seiten mit Fokus auf Struktur & GEO
+
+### Ahaa-Moment 💡
+
+Ein zentraler Ahaa-Moment war, dass **klar formulierte Prompts** entscheidender sind als technisches Detailwissen. Gute Prompts führen zu besserem Code, besserem Design und schnellerem Fortschritt.
+
+---
+
+## GEO-Strategie
+
+- Klare Überschriften-Hierarchie
+- FAQ-Sections für Zitierbarkeit
+- Semantisches HTML
+- Schema.org Markup (FAQPage auf mindestens einer Seite)
+- Crawling durch KI-Suchmaschinen erlaubt
+
+**Beispiel-Keywords:**
+- vibe coding  
+- ai web app  
+- generative engine optimization  
+- llm friendly website  
+
+---
+
+## Persönliche Reflexion
+
+Das Projekt hat gezeigt, dass Vibe-Coding eine effektive Methode ist, um Ideen schnell in funktionierende Produkte zu überführen. Besonders wertvoll war die Kombination aus Entwicklung, Content und GEO, da sie verdeutlicht, wie wichtig Struktur und Klarheit für KI-Systeme sind.
+
+---
+
+## Abgabe
+
+- **WebApp:** https://thelastzebra.lovable.app/  
+- **Marketing-Seite / Repository:** https://marketing-page-2-ten.vercel.app/
+
+*Wahlmodul: Viben & Coden – FH Graubünden*
