@@ -46,7 +46,7 @@ export function Footer() {
                     e.preventDefault()
                     scrollToSection('about')
                   }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.links.about}
                 </a>
@@ -58,7 +58,7 @@ export function Footer() {
                     e.preventDefault()
                     scrollToSection('features')
                   }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.links.features}
                 </a>
@@ -70,7 +70,7 @@ export function Footer() {
                     e.preventDefault()
                     scrollToSection('community')
                   }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.links.community}
                 </a>
@@ -82,7 +82,7 @@ export function Footer() {
                     e.preventDefault()
                     scrollToSection('faq')
                   }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.links.faq}
                 </a>
@@ -98,7 +98,7 @@ export function Footer() {
                   href={LINKS.privacy}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.legal.privacy}
                 </a>
@@ -108,7 +108,7 @@ export function Footer() {
                   href={LINKS.terms}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
                 >
                   {t.footer.legal.terms}
                 </a>
@@ -125,7 +125,7 @@ export function Footer() {
               href={LINKS.app}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-small text-violet hover:text-violet/80 transition-colors"
+              className="text-small text-violet hover:text-violet/80 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-1 py-1 inline-block"
             >
               {t.nav.openApp} →
             </a>

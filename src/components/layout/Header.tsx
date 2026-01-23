@@ -10,6 +10,7 @@ import { LINKS } from '@/config/links'
 export function Header() {
   const { t } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,27 @@ export function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    // Close mobile menu on scroll
+    if (mobileMenuOpen) {
+      const handleScroll = () => setMobileMenuOpen(false)
+      window.addEventListener('scroll', handleScroll)
+      return () => window.removeEventListener('scroll', handleScroll)
+    }
+  }, [mobileMenuOpen])
+
+  useEffect(() => {
+    // Prevent body scroll when mobile menu is open
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
 
   const scrollToSection = (id: string) => {
     // Check if we're on the homepage
@@ -32,6 +54,7 @@ export function Header() {
       // Navigate to homepage with anchor
       window.location.href = `/#${id}`
     }
+    setMobileMenuOpen(false)
   }
 
   const navItems = [
@@ -66,7 +89,7 @@ export function Header() {
               }
               // Otherwise, let the link navigate normally to homepage
             }}
-            className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer"
+            className="font-display text-h3 font-bold bg-grad-accent bg-clip-text text-transparent cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded"
             aria-label="Vibe - Home"
           >
             Vibe
@@ -84,7 +107,7 @@ export function Header() {
                     e.preventDefault()
                     scrollToSection(item.id)
                   }}
-                  className="text-small text-text-1 hover:text-text-0 transition-colors"
+                  className="text-small text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-2 py-1"
                 >
                   {item.label}
                 </a>
@@ -92,13 +115,77 @@ export function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 lg:gap-4">
             <LanguageToggle />
-            <Button as="link" href={LINKS.app} variant="primary">
+            <Button 
+              as="link" 
+              href={LINKS.app} 
+              variant="primary"
+              className="hidden sm:inline-flex"
+            >
               {t.nav.openApp}
             </Button>
+            
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden w-10 h-10 flex items-center justify-center text-text-1 hover:text-text-0 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded"
+              aria-label="Toggle menu"
+              aria-expanded={mobileMenuOpen}
+            >
+              <svg
+                className={`w-6 h-6 transition-transform ${mobileMenuOpen ? 'rotate-90' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <nav
+            className="lg:hidden absolute top-16 left-0 right-0 bg-bg-0/95 backdrop-blur-sm border-b border-surface-1"
+            aria-label="Mobile navigation"
+          >
+            <div className="px-4 py-6 space-y-4">
+              {navItems.map((item) => {
+                const isHomepage = typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')
+                return (
+                  <a
+                    key={item.id}
+                    href={isHomepage ? `#${item.id}` : `/#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault()
+                      scrollToSection(item.id)
+                    }}
+                    className="block text-body text-text-1 hover:text-text-0 transition-colors py-2 focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-offset-2 focus:ring-offset-bg-0 rounded px-2"
+                  >
+                    {item.label}
+                  </a>
+                )
+              })}
+              <div className="pt-4 border-t border-surface-1">
+                <Button
+                  as="link"
+                  href={LINKS.app}
+                  variant="primary"
+                  className="w-full justify-center"
+                >
+                  {t.nav.openApp}
+                </Button>
+              </div>
+            </div>
+          </nav>
+        )}
       </Container>
     </header>
   )

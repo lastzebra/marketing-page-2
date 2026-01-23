@@ -40,19 +40,19 @@ export function FAQ() {
                 <article
                   key={index}
                   {...({ itemScope: true, itemType: 'https://schema.org/Question' } as any)}
-                  className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden"
+                  className="bg-surface-0/60 border border-surface-1 rounded-xl overflow-hidden transition-all hover:border-violet/30"
                 >
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-900/70 transition-colors"
+                    className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-surface-1/50 transition-colors focus:outline-none focus:ring-2 focus:ring-violet/50 focus:ring-inset min-h-[60px]"
                     aria-expanded={openIndex === index}
                     aria-controls={`faq-answer-${index}`}
                   >
-                    <h3 className="font-semibold text-white pr-4" {...({ itemProp: 'name' } as any)}>
+                    <h3 className="font-semibold text-text-0 pr-4" {...({ itemProp: 'name' } as any)}>
                       {faq.question}
                     </h3>
                     <svg
-                      className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform ${
+                      className={`w-5 h-5 text-text-2 flex-shrink-0 transition-transform ${
                         openIndex === index ? 'rotate-180' : ''
                       }`}
                       fill="none"

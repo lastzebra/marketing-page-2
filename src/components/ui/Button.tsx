@@ -22,12 +22,12 @@ type LinkButtonProps = BaseButtonProps & Omit<AnchorHTMLAttributes<HTMLAnchorEle
 type ButtonComponentProps = ButtonProps | LinkButtonProps
 
 export function Button({ variant = 'primary', children, className = '', as, href, ...props }: ButtonComponentProps) {
-  const baseStyles = 'px-8 py-3.5 rounded-md font-medium text-body transition-all duration-200'
+  const baseStyles = 'px-8 py-3.5 rounded-md font-medium text-body transition-all duration-200 min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-bg-0'
   
   const variants: Record<ButtonVariant, string> = {
-    primary: 'bg-grad-accent text-white hover:shadow-glow-accent animate-gradient',
-    secondary: 'border border-surface-1 text-text-1 hover:border-violet/50 hover:text-text-0 hover:bg-surface-1',
-    ghost: 'text-text-1 hover:text-text-0',
+    primary: 'bg-grad-accent text-white hover:shadow-glow-accent focus:ring-violet/50 active:scale-[0.98]',
+    secondary: 'border border-surface-1 text-text-1 hover:border-violet/50 hover:text-text-0 hover:bg-surface-1 focus:ring-violet/50 active:scale-[0.98]',
+    ghost: 'text-text-1 hover:text-text-0 focus:ring-violet/50 active:scale-[0.98]',
   }
 
   const classes = `${baseStyles} ${variants[variant]} ${className}`
