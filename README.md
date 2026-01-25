@@ -17,7 +17,7 @@ Ziel war es, mithilfe von KI-gestütztem Prompting:
 
 - eine funktionsfähige, responsive WebApp zu bauen: VIBE 
 - einen konkreten, persönlichen Use-Case umzusetzen: Als DJ ist mir aufgefallen, dass das Suchen von Tracks und Zusammenstellen von Sets sehr viel Zeit in Anspruch nimmt. In neue Musk reinhören, um meine Sets laufent aktuell zu halten macht zwar Spass, ist aber auch zeitintensiv. Ebenfalls kommt eine neue Komponente dazu, dass AI auch vor der Musikindustie nicht halt macht und somit ebenfalls Bestandteil meiner App sein soll. 
-- sowie **GEO-optimierte Marketing-Seiten** zu erstellen, die von KI-Suchmaschinen verstanden und zitiert werden können.
+- sowie GEO-optimierte Marketing-Seiten zu erstellen, die von KI-Suchmaschinen verstanden und zitiert werden können.
 
 ---
 
@@ -42,13 +42,13 @@ Die Marketing-Website orientiert sich an klassischen SaaS-Landing-Pages und umfa
 - Features
 - FAQ
 
-Die Inhalte sind klar strukturiert, semantisch aufgebaut und auf **Generative Engine Optimization (GEO)** ausgelegt.
+Die Inhalte sind klar strukturiert, semantisch aufgebaut und auf Generative Engine Optimization (GEO) ausgelegt.
 
 ---
 
 ## Vibe-Coding & Prompts (Auswahl)
 
-**Ideenfindung**
+IDEENFINDUNG - ERSTER PROMT:
  You are a senior creative front-end developer and digital designer.
 Build a modern, immersive landing page for a web app aimed at DJs, producers and music lovers who want to discover new music, build DJ sets and generate their own tracks.
 
@@ -228,7 +228,7 @@ kontrolliere bitte die Dateien auf diesen Fokus.
 - Trennung von Funktionalität, UI und Content
 - Umsetzung der Marketing-Seiten mit Fokus auf Struktur & GEO
 
-### Ahaa-Moment 💡
+## Ahaa-Moment 💡
 
 Ein zentraler Ahaa-Moment war, dass klar formulierte Prompts entscheidender sind als technisches Detailwissen. Gute Prompts führen zu besserem Code, besserem Design und schnellerem Erfolg. Es ist wie ein Mitarbeiter, den man trainieren muss, und der sehr eng belgeitet werden muss. Er kann viel, nicht alles ist richtig und das gilt es zu lenken. Spannend fand ich, dass die KI einen Vorschlag, macht, den man anpassen kann und dessen Resultat dann auch Spass macht, wenn es dann auch so aussieht, wie man sich das vorgestellt hat. Und kleine Schritte kann er besser umsetzten als viele Änderungen auf einmal. 
 
@@ -242,7 +242,7 @@ Ein zentraler Ahaa-Moment war, dass klar formulierte Prompts entscheidender sind
 - Schema.org Markup (FAQPage auf mindestens einer Seite)
 - Crawling durch KI-Suchmaschinen erlaubt
 
-**Beispiel-Keywords:**
+BEISPIEL KEYWORDS:
 - vibe coding  
 - ai web app  
 - generative engine optimization  
