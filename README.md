@@ -15,8 +15,8 @@ Beide Teile wurden mit **Vibe-Coding-Methoden** entwickelt und sind öffentlich 
 
 Ziel war es, mithilfe von KI-gestütztem Prompting:
 
-- eine **funktionsfähige, responsive WebApp** zu bauen,
-- einen **konkreten, persönlichen Use-Case** umzusetzen,
+- eine funktionsfähige, responsive WebApp zu bauen: VIBE 
+- einen konkreten, persönlichen Use-Case umzusetzen: Als DJ ist mir aufgefallen, dass das Suchen von Tracks und Zusammenstellen von Sets sehr viel Zeit in Anspruch nimmt. In neue Musk reinhören, um meine Sets laufent aktuell zu halten macht zwar Spass, ist aber auch zeitintensiv. Ebenfalls kommt eine neue Komponente dazu, dass AI auch vor der Musikindustie nicht halt macht und somit ebenfalls Bestandteil meiner App sein soll. 
 - sowie **GEO-optimierte Marketing-Seiten** zu erstellen, die von KI-Suchmaschinen verstanden und zitiert werden können.
 
 ---
@@ -213,10 +213,10 @@ Produce clean, readable code and reusable components.
 Focus on atmosphere, flow and clarity.
 
 
-**UI & UX**
+BEISPIEL UI & UX DESIGN:
 ux ui - bitte kotrolliere die Dateien, ob alles so optimiert, ist.
 
-**Marketing & GEO**
+BEISPIEL Marketing & GEO OPTIMIERUNG:
 kontrolliere bitte die Dateien auf diesen Fokus.
 ---
 
@@ -230,7 +230,7 @@ kontrolliere bitte die Dateien auf diesen Fokus.
 
 ### Ahaa-Moment 💡
 
-Ein zentraler Ahaa-Moment war, dass **klar formulierte Prompts** entscheidender sind als technisches Detailwissen. Gute Prompts führen zu besserem Code, besserem Design und schnellerem Fortschritt.
+Ein zentraler Ahaa-Moment war, dass klar formulierte Prompts entscheidender sind als technisches Detailwissen. Gute Prompts führen zu besserem Code, besserem Design und schnellerem Erfolg. Es ist wie ein Mitarbeiter, den man trainieren muss, und der sehr eng belgeitet werden muss. Er kann viel, nicht alles ist richtig und das gilt es zu lenken. Spannend fand ich, dass die KI einen Vorschlag, macht, den man anpassen kann und dessen Resultat dann auch Spass macht, wenn es dann auch so aussieht, wie man sich das vorgestellt hat. Und kleine Schritte kann er besser umsetzten als viele Änderungen auf einmal. 
 
 ---
 
@@ -252,7 +252,7 @@ Ein zentraler Ahaa-Moment war, dass **klar formulierte Prompts** entscheidender 
 
 ## Persönliche Reflexion
 
-Das Projekt hat gezeigt, dass Vibe-Coding eine effektive Methode ist, um Ideen schnell in funktionierende Produkte zu überführen. Besonders wertvoll war die Kombination aus Entwicklung, Content und GEO, da sie verdeutlicht, wie wichtig Struktur und Klarheit für KI-Systeme sind.
+Das Projekt hat gezeigt, dass Vibe-Coding eine effektive Methode ist, um Ideen schnell in funktionierende Produkte zu überführen. Besonders wertvoll war die Kombination aus Entwicklung, Content und GEO, da sie verdeutlicht, wie wichtig Struktur und Klarheit für KI-Systeme sind. Es aht mich sehr beeindruckt, wie schnell man so einen Prototyp umsetzen kann. Spannend wäre es nun zu erfahren, was ich alles beachten muss, wenn ich es wirklich umsetzen möchte und was es bis zu finalen Version noch alles zu berücksichtigen gilt. 
 
 ---
 
